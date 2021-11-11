@@ -15,7 +15,7 @@ function App() {
   ];
 
   //fungsi menghitung selisih antar diagonal
-  const jlmDiagonal = (arr) => {
+  const jlDiagonal = (arr) => {
     var diagonal = { kiri: 0, kanan: 0 };
     var arrLeng = arr.length;
 
@@ -40,7 +40,7 @@ function App() {
           <br />
           <span>[ 9, 8, 9 ]</span>
           <br />
-          <span>maka selisihny : {jlmDiagonal(matrixTest)}</span>
+          <span>maka selisihny : {jlDiagonal(matrixTest)}</span>
         </div>
         <div className="card">
           <span>matrix Test 2 :</span>
@@ -51,7 +51,7 @@ function App() {
           <br />
           <span>[ 10, 8, -12 ]</span>
           <br />
-          <span>maka selisihny : {jlmDiagonal(matrixTest2)}</span>
+          <span>maka selisihny : {jlDiagonal(matrixTest2)}</span>
           <br />
           <br />
         </div>

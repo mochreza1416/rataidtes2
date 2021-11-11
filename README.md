@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Fungsi menghitung selisih antar diagonal
 
 ```bash
-const jlmDiagonal = (arr) => {
+const jlDiagonal = (arr) => {
     var diagonal = { kiri: 0, kanan: 0 };
     var arrLeng = arr.length;
 
