@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Fungsi menghitung selisih antar diagonal
+
+```bash
+const jlmDiagonal = (arr) => {
+    var diagonal = { kiri: 0, kanan: 0 };
+    var arrLeng = arr.length;
+
+    for (var i = 0; i < arrLeng; i++) {
+        diagonal.kiri += arr[i][i];
+        diagonal.kanan += arr[i][arrLeng - i - 1];
+    }
+    var selisihDiagonal = Math.abs(diagonal.kiri - diagonal.kanan);
+    return selisihDiagonal;
+};
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
